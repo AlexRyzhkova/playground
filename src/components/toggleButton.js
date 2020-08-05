@@ -1,4 +1,4 @@
-import { createElement } from "../utils/elements";
+import { createElement } from "../utils/elements.js";
 
 export function createToggleButton() {
   const toggleButton = createElement("button", {
@@ -7,9 +7,9 @@ export function createToggleButton() {
   });
 
   const rootStyle = document.documentElement.style;
-  const isDark = rootStyle.getPropertyValue("--main-bg-color") === "#000";
   // let isDark = true;
   toggleButton.addEventListener("click", () => {
+    let isDark = rootStyle.getPropertyValue("--main-bg-color") === "#000";
     if (isDark) {
       rootStyle.setProperty("--main-bg-color", "#fff");
       rootStyle.setProperty("--main-color", "#000");
@@ -17,7 +17,7 @@ export function createToggleButton() {
       rootStyle.setProperty("--main-bg-color", "#000");
       rootStyle.setProperty("--main-color", "#fff");
     }
-    //   isDark = !isDark;
+    // isDark = !isDark;
   });
 
   return toggleButton;
