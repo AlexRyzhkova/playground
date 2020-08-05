@@ -1,8 +1,9 @@
+import "./toggleButton.css";
 import { createElement } from "../utils/elements.js";
 
 export function createToggleButton() {
   const toggleButton = createElement("button", {
-    className: "toggleButton",
+    className: "toggle",
     innerText: "toggle Theme",
   });
 
