@@ -6,9 +6,9 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--main-color);
-  background-image: url(assets/sunset.jpg);
+  /* background-image: url(assets/sunset.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* button {
